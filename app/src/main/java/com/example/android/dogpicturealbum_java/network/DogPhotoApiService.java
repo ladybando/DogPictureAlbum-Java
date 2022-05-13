@@ -1,4 +1,4 @@
-package com.example.android.dogpicturealbum_java;
+package com.example.android.dogpicturealbum_java.network;
 
 import com.example.android.dogpicturealbum_java.jsonadapter.DogPhotoAdapter;
 import com.squareup.moshi.Moshi;
@@ -22,8 +22,11 @@ public class DogPhotoApiService {
     DogPhotoApi api = retrofit.create(DogPhotoApi.class);
     Call<Void> photos = api.getRandomPhoto();
 }
+
 interface DogPhotoApi{
     @GET("breeds/image/random")
     Call<Void> getRandomPhoto();
 
 }
+
+
