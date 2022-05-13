@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">DogPictureAlbum-Java</string>
+    <string name="dog_images">Dog Images</string>
+    <string name="next">Next</string>
+</resources>
