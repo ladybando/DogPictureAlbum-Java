@@ -9,8 +9,10 @@ import com.example.android.dogpicturealbum_java.network.DogPhoto;
 public class DogPhotoViewModel extends ViewModel {
 
     private MutableLiveData<DogPhoto> dogPhoto;
-    public LiveData<DogPhoto> getNewPhoto(){
 
+    //return dog photo to use outside of class
+    public LiveData<DogPhoto> returnNewPhoto(){
         return dogPhoto;
     }
+
 }
